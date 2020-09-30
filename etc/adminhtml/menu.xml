@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add 
+            id="Arthurbes::general"
+            module="Arthurbes_ErpOrder"
+            resource="Magento_Backend::content"
+            sortOrder="9999"
+            title="Arthur BES"
+        />
+        <add
+            action="arthurbes_erporder/log/index"
+            id="Arthurbes_ErpOrder::arthurbes_erporder_log"
+            module="Arthurbes_ErpOrder"
+            parent="Arthurbes::general"
+            resource="Magento_Backend::content"
+            sortOrder="9999"
+            title="Log"
+        />
+    </menu>
+</config>

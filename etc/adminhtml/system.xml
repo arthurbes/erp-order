@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="arthurbes" sortOrder="999" translate="label">
+            <label>Arthur BES Modules</label>
+        </tab>
+        <section id="erp_order" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="1" translate="label">
+            <label>ERP Order</label>
+            <tab>arthurbes</tab>
+            <resource>Arthurbes_ErpOrder::config_arthurbes_erporder</resource>
+            <group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="1" translate="label">
+                <label>General</label>
+                <field id="active" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="1" translate="label" type="select">
+                    <label>Active</label>
+                    <comment>Check here if you want the module be active</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="api_key" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="2" translate="label" type="text">
+                    <label>API Key</label>
+                    <comment>Set here your API key</comment>
+                </field>
+                <field id="endpoint" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="3" translate="label" type="text">
+                    <label>Endpoint</label>
+                    <comment>Set here the API endpoint</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

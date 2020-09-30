@@ -1,0 +1,32 @@
+{
+    "name": "arthurbes/erp-order",
+    "description": "Módulo ERP Order",
+    "type": "magento2-module",
+    "version": "2.3.4",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "arth10@hotmail.com",
+            "name": "ArthurBES"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "~7.2.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Arthurbes\\ErpOrder\\": ""
+        }
+    },
+    "repositories": {
+        "base": {
+            "type": "vcs",
+            "url": "git@github.com:arthurbes/erp-order.git",
+            "vendor-alias": "arthurbes"
+        }
+    }
+}

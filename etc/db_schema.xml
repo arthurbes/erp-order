@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table comment="Log table from ERP Order Module" engine="innodb" name="arthurbes_erporder_log" resource="default">
+        <column identity="true" name="id" nullable="false" padding="6" unsigned="true" xsi:type="smallint"/>
+        <constraint referenceId="PRIMARY" xsi:type="primary">
+            <column name="id"/>
+        </constraint>
+        <column default="true" name="error" nullable="true" xsi:type="boolean"/>
+        <column length="255" name="message" nullable="true" xsi:type="varchar"/>
+        <column name="created_at" nullable="false" xsi:type="timestamp" on_update="false" default="CURRENT_TIMESTAMP"/>
+    </table>
+</schema>

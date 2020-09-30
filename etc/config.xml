@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <erp_order>
+            <general>
+                <active>0</active>
+                <api_key/>
+                <endpoint>/webhook/sales/</endpoint>
+            </general>
+        </erp_order>
+    </default>
+</config>
